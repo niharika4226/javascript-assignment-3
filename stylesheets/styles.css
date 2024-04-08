@@ -1,0 +1,168 @@
+:root {
+    --color-red: #c23616;
+    --color-red-dark: #df3c17;
+    --color-yellow: #fbc531;
+    --color-black: rgb(36, 36, 36);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+html {
+    font-size: 62.5%;
+}
+
+::selection {
+    background: var(--color-red);
+    color: var(--color-white);
+}
+
+/* Typography */
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-yellow);
+    transition: all 0.45s;
+}
+
+a:hover {
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header */
+header {
+    background: var(--color-red);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    align-items: center;
+}
+
+.nav-bar li {
+    display: inline;
+    margin-right: 2rem;
+}  
+
+.web-logo {
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+    transition: all 0.35s;
+}
+
+.web-logo:hover {
+    color: white;
+}
+
+/* Main */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 22rem;
+}
+
+main h1 {
+    margin-bottom: 2rem;
+}
+
+main p {
+    margin-bottom: 2rem;
+}
+
+.search-button {
+    display: block;
+}
+
+button, select, input {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    outline: none;
+}
+
+select, input[type="number"] {
+    width: 100%;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+input {
+    cursor: text;
+}
+
+.search-year {
+    display: inline;
+}
+
+.btn {
+    background: var(--color-red);
+    transition: all 0.35s;
+    color: white;
+}
+
+.btn:hover {
+    background: var(--color-red-dark);
+}
+
+/* Movie Results */
+.movie-results {
+    text-align: center;
+    margin-top:  6rem;
+}
+
+.movie-results h2 {
+    margin-bottom: 2rem;
+}
+
+.movie-results img {
+    height: 40rem;
+    width: 28rem;
+    margin-bottom: 2rem;
+}
+
+.movie-results p {
+    font-weight: bold;
+    text-align: justify;
+}
+
+.movie-results span {
+    font-weight: normal;
+}
+
+
+/* Footer */
+footer {
+    background: var(--color-black);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 1.5rem;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: var(--color-yellow);
+}

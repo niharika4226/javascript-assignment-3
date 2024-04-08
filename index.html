@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Niharika Rana">
+    <meta name="description" content="Assignment 3 of JavaScript">
+
+    <!-- Stylesheet and Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
+    
+    <!-- Window Related -->
+    <title>JavaScript | Assignment 3</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Navigation bar -->
+        <nav>
+            <ul class="nav-bar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Report</a></li>
+            </ul>
+        </nav>
+
+        <!-- Logo -->
+        <div class="web-logo">
+            MovieSearcher 
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <h1>
+            Search for Films
+        </h1>
+
+        <p style="text-align: center;">
+            Enter the Film name and optional to use filters to enhance the search experience. Best tool to find any film released globally! 
+        </p>
+
+        <!-- Search -->
+        <form class="search-form">
+            <!-- Search Button Combination -->
+            <span class="search-button">
+                <input id="search-field" type="text" value="Pushpa the Rise" required name="movie-name" autofocus>
+                <button id="search-button" class="btn">Search</button>
+            </span>
+
+            <!-- Type -->
+            <select name="type" id="search-select">
+                <option disabled selected value="null">Type</option>
+                <option value="movie">Movie</option>
+                <option value="movie">Series</option>
+                <option value="movie">Episode</option>
+            </select>
+
+            <!-- Year -->
+            <span class="search-year">
+                <input name="year" id="search-year" type="number" min="1900" max="2024" placeholder="Release Year"> 
+            </span>
+        </form>
+
+        <div class="movie-results">
+            <h2 id="movie-title">Pushpa: The Rise - Part 1</h2>
+            <img id="movie-image" src="https://m.media-amazon.com/images/M/MV5BMmQ4YmM3NjgtNTExNC00ZTZhLWEwZTctYjdhOWI4ZWFlMDk2XkEyXkFqcGdeQXVyMTI1NDEyNTM5._V1_SX300.jpg" alt="movie-poster">
+            <p>
+                Release Date: <span id="movie-year">17 Dec 2021</span><br>
+                Duration: <span id="movie-duration">179 min</span><br>
+                IMDB Ratings: <span id="movie-ratings">7.6</span><br>
+                Genre: <span id="movie-genre">Action, Crime, Drama</span><br>
+                Box Office: <span id="movie-collections">$1,320,000</span><br>
+                Type: <span id="movie-type">Movie</span>
+            </p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        Copyright &copy; 2024 | <a href="/">MovieSearcher</a> | All Rights Reserved
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/main.js"></script>
+</body>
+</html>
